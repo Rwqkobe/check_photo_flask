@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div style="float: left;width: 75%">
+    <img src="{{ relative_url }}" width="1024" height="576">
+
+    {{ img_url }}
+    <hr>
+</div>
+<div style="float: right;width: 20%;">
+    <form method="post" style="">
+        <table>{{ form.weather.label }}{{ form.weather }}</table>
+        <table>{{ form.road.label }}{{ form.road }}</table>
+        <table> {{ form.time.label }}{{ form.time }}</table>
+        {{ form.next_pic }}
+    </form>
+</div>
+</body>
+</html>
